@@ -99,7 +99,7 @@ h1 {
     transform: translateX(4px);
 }
 
-/* Clases auxiliares reutilizables (sin estilo en línea) */
+/* Clases auxiliares reutilizables */
 
 .back-link {
     display: inline-block;
@@ -135,4 +135,53 @@ h1 {
     color: var(--primary-hover);
     font-weight: 600;
     font-size: 1.15rem;
+}
+
+
+/* Estilos para la gráfica del Árbol Binario */
+.tree-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    overflow-x: auto;
+}
+
+.tree-node-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.tree-node-value {
+    width: 40px;
+    height: 40px;
+    background-color: #f7d6e0;
+    color: #5c3d46;
+    border: 2px solid #b5838d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.tree-children {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+}
+
+.tree-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.tree-empty {
+    width: 20px;
 }
