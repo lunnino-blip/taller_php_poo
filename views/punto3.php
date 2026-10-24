@@ -48,9 +48,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['numbers'])) {
         <?php if ($result !== null): ?>
             <div class="result-card">
                 <h2 class="result-title">Resultados Estadísticos:</h2>
-                <p><strong>Promedio (Media Aritmética):</strong> <span class="result-highlight"><?= htmlspecialchars($result['average']) ?></span></p>
-                <p><strong>Mediana (Valor Central):</strong> <span class="result-highlight"><?= htmlspecialchars($result['median']) ?></span></p>
-                <p><strong>Moda (Más Frecuente):</strong> <span class="result-highlight"><?= htmlspecialchars($result['mode']) ?></span></p>
+                <p><strong>Promedio:</strong> <span class="result-highlight"><?= htmlspecialchars($result['average']) ?></span></p>
+                <p><strong>Mediana:</strong> <span class="result-highlight"><?= htmlspecialchars($result['median']) ?></span></p>
+                <p><strong>Moda:</strong> <span class="result-highlight"><?= htmlspecialchars($result['mode']) ?></span></p>
             </div>
         <?php endif; ?>
     </div>
